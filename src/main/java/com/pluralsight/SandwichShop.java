@@ -17,17 +17,17 @@ public class SandwichShop {
             System.out.printf("Your total is: %.2f", (5.45 * .9));
         }
         else  if (sandwichSize.equals("1") && userAge > 65) {
-            System.out.printf("Your total is: %.2f", (5.45 * .8));
-        } else {
+            System.out.printf("Your total is: $%.2f", (5.45 * .8));
+        } else if (sandwichSize.equals("1")) {
             System.out.println("Your total is: $5.45");
         }
 
         if (sandwichSize.equals("2") && userAge < 17) {
-            System.out.printf("Your total is: %.2f", (8.95 * .9));
+            System.out.printf("Your total is: $%.2f", (8.95 * .9));
         }
-        else  if (sandwichSize.equals("1") && userAge > 65) {
-            System.out.printf("Your total is: %.2f", (8.95 * .8));
-        } else {
+        else  if (sandwichSize.equals("2") && userAge > 65) {
+            System.out.printf("Your total is: $%.2f", (8.95 * .8));
+        } else if (sandwichSize.equals("2")) {
             System.out.println("Your total is: $8.95");
         }
 
